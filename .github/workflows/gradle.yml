@@ -31,6 +31,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build with Gradle
-      run: ./gradelw build
+      run: ./gradlew build
     - name: Test with Gradle
       run: ./gradlew test
