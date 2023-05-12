@@ -6,7 +6,7 @@ import java.lang.String;
 class Main {
     public static int inputfunc(String input){
 
-       String [] keywords = {"scrum", "crystal", "lean", "xp", "extreme programming", "rup", "waterfall"};
+       String [] keywords = {"scrum", "crystal", "lean", "xp", "extreme programming", "rup", "waterfall", "refactoring", "safe"};
        
        //got the idea for this for loop from stack overflow because I was stuck : 
        //https://stackoverflow.com/questions/29573709/scanning-the-entire-user-input-for-a-matching-keyword-in-java#:~:text=One%20is%20to%20use%20the%20contains%20method%20on,if%20%28input.contains%20%28keywords%20%5Bi%5D%29%29%20%7B%20System.out.println%20%28%22Found%20keyword%21%22%29%3B
@@ -51,6 +51,18 @@ class Main {
                 }
                 else if (keyword.equals("waterfall")){
                     System.out.println("The waterfall method is a traditional approach to software development. It follows a sequential process where progress flows in one direction through a series of phases: requirements gathering and analysis, design, implementation, testing, deployment, and maintenance. Each phase must be completed before moving onto the next phase. This approach assumes that the requirements of a project can be fully understood and defined upfront, and that changes can be easily accommodated.");
+                    return 0;
+                }
+                 else if (keyword.equals("refactoring")){
+                    System.out.println("Refactoring code refers to the process of restructuring existing code without changing its functionality. It involves making changes to the codeto make it easier to read and maintain. The goal of refactoring is to improve the code's overall quality, making it easier to modify in the future, reducing the likelihood of bugs, and making it more efficient. It can also involve eliminating duplicate code, improving naming conventions, and breaking down large functions into smaller, more manageable pieces. You may want to refactor your code if it contains any bad smells.");
+                    return 0;
+                }
+                else if (keyword.equals("safe")){
+                    System.out.println("SAFe typically refers to the Scaled Agile Framework (SAFe), which is a set of practices and principles designed to help organizations scale their agile practices across multiple teams and departments. There are four different levels of SAFe which are:");
+                    System.out.println("Overview of SAFe");
+                    System.out.println("Project level of SAFe");
+                    System.out.println("Program level of SAFe");
+                    System.out.println("Portfolio level of SAFe");
                     return 0;
                 }
             }
