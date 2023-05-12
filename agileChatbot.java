@@ -6,7 +6,7 @@ import java.lang.String;
 class Main {
     public static int inputfunc(String input){
 
-       String [] keywords = {"scrum", "crystal", "lean", "xp", "extreme programming", "rup", "waterfall", "refactoring", "safe"};
+       String [] keywords = {"scrum", "crystal", "lean", "xp", "extreme programming", "rup", "waterfall", "refactoring", "safe", "continuous integration", "ci", "pair programming"};
        
        //got the idea for this for loop from stack overflow because I was stuck : 
        //https://stackoverflow.com/questions/29573709/scanning-the-entire-user-input-for-a-matching-keyword-in-java#:~:text=One%20is%20to%20use%20the%20contains%20method%20on,if%20%28input.contains%20%28keywords%20%5Bi%5D%29%29%20%7B%20System.out.println%20%28%22Found%20keyword%21%22%29%3B
@@ -63,6 +63,14 @@ class Main {
                     System.out.println("Project level of SAFe");
                     System.out.println("Program level of SAFe");
                     System.out.println("Portfolio level of SAFe");
+                    return 0;
+                }
+                else if (keyword.equals("ci") || keyword.equals("continuous integration")){
+                    System.out.println("Continuous Integration (CI) is a software development practice that involves continuously integrating code changes made by developers into a central repository and automatically building, testing, and validating the software as soon as the changes are made. The goal of continuous integration is to ensure that software is always in a releasable state by detecting and fixing integration issues early in the development process.");
+                    return 0;
+                }
+                 else if (keyword.equals("pair programming")){
+                    System.out.println("Pair programming is a software development technique in which two programmers work together at one computer. One person, the driver, is responsible for writing code, while the other person, the navigator, reviews each line of code as it is typed, providing feedback, suggesting improvements, and catching errors. The roles can be switched at any time, and both programmers are expected to actively participate in the coding process. It can also be done virtually through Zoom or etc.");
                     return 0;
                 }
             }
